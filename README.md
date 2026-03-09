@@ -1,7 +1,7 @@
 # Hi, I'm Maurice 👋
 
 Computer Science B.Sc. student  
-Interested in backend architecture & DevOps.
+Interested in software architecture & DevOps.
 
 ## Tech Stack
 - Java
