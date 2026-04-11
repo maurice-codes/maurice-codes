@@ -17,4 +17,4 @@ Interested in software architecture & DevOps.
 - CI/CD
 
 ## Projects
-- Kanban Project Management API (currently working on)
+
