@@ -1,0 +1,30 @@
+name: Update study progress
+
+on:
+  schedule:
+    - cron: "5 0 * * *"   # every day shortly after midnight (UTC)
+  workflow_dispatch:       # allows manual run from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate progress bar
+        run: python scripts/study_progress.py
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/study-progress.svg
+          git diff --staged --quiet || git commit -m "chore: update study progress"
+          git push
