@@ -10,8 +10,8 @@
       <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
     </linearGradient>
     <clipPath id="barClip">
-      <rect x="20" y="52" width="499.0" height="22" rx="11">
-        <animate attributeName="width" from="0" to="499.0" dur="1.8s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
+      <rect x="20" y="52" width="499.5" height="22" rx="11">
+        <animate attributeName="width" from="0" to="499.5" dur="1.8s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1" keyTimes="0;1"/>
       </rect>
     </clipPath>
   </defs>
@@ -25,7 +25,7 @@
   </style>
 
   <text x="20" y="36" class="title">🎓 B.Sc. Computer Science</text>
-  <text x="580" y="36" class="pct fade" text-anchor="end">89.1%</text>
+  <text x="580" y="36" class="pct fade" text-anchor="end">89.2%</text>
 
   <rect x="20" y="52" width="560" height="22" rx="11" fill="#E0F4FF"/>
   <g clip-path="url(#barClip)">
@@ -36,6 +36,6 @@
   </g>
 
   <text x="20" y="96" class="small">01.10.2023</text>
-  <text x="300" y="96" class="small fade" text-anchor="middle">139 days to go</text>
+  <text x="300" y="96" class="small fade" text-anchor="middle">138 days to go</text>
   <text x="580" y="96" class="small" text-anchor="end">31.03.2027</text>
 </svg>
